@@ -1,9 +1,14 @@
 body {
-
+    
+    margin:0 auto;
+    background-color:#e0e0e0;
     height: 100%;
      width: 100%;
-
+     
   }
+  header{
+    background-color:rosybrown;
+}
   #logo{
       height:60px;
       width: 60px;
@@ -13,6 +18,12 @@ body {
       height:100%;
       width: 100%;
   }
+
+  .list{
+      margin:2%;
+      background-color: rgb(132,136,139);
+      width: 40%;
+  }
   .cityimage{
       height:250px;
       width:250px;
@@ -21,3 +32,6 @@ body {
       height: 20px;
       width:22px;
   }
+  footer{
+    background-color:rosybrown;
+}

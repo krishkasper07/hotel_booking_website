@@ -1,9 +1,14 @@
 body {
-
+    
+    margin:0 auto;
+    background-color:#e0e0e0;
     height: 100%;
      width: 100%;
-
+     
   }
+  header{
+    background-color:rosybrown;
+}
   #logo{
       height:60px;
       width: 60px;
@@ -13,11 +18,32 @@ body {
       height:100%;
       width: 100%;
   }
+  #city{
+      background-color: rgb(132,136,139);
+      width:50%;
+      height:20%;
+      margin: 2% 30%;
+      
+
+  }
   .cityimage{
       height:500px;
       width:500px;
   }
+  #information{
+      margin:2%;
+  }
+  #tariff{
+        margin:2%;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 1% 2%;
+
+  }
   .socialmedia{
       height: 20px;
       width:22px;
-  }  
+  }
+  footer{
+    background-color:rosybrown;
+}
