@@ -1,32 +1,36 @@
+.view{
+    text-decoration: none;
+    color: black;
+    float:inline-end;
+}
 #listview{
     scroll-behavior:smooth;
-   
 }
 
+#mapview{
+    scroll-behavior: smooth;
+    display: none;
+}
 
-  .cityimg{
-    margin-top: 2.4%;
-    margin-bottom: 1.8%;
-    margin-left: 4%;
-    margin-right: 5%;
-    background-color: rgb(132,136,139);
+.cityimg{
+    margin: 3% 5.2% 1.8% 4.8%;
+    background-color: lightgray;
     width: 40%;
-    float:left;
-  }
-  .cityimage{
-      height:250px;
-      width:250px;
-  }
- #mapview{
-     scroll-behavior: smooth;
-     display: none;
-     
- }
- .view{
-     text-decoration: none;
-     color: black;
- } 
- h3,p{
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.cityimage{
+    height:230px;
+    width:250px;
+} 
+.text{
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+}
+h3,p{
      text-decoration: none;
      color:black;
- }
+}
