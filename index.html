@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+      <meta charset="UTF-8">
+
         <title>Index</title>
        <link rel="stylesheet" href="styles/index.css">
        <link rel="stylesheet" href="styles/common.css">
        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     </head>
-    <body>
-        <div>
+    <body style="overflow-x: hidden;">
+        <div class="container.fluid column">
             <header> 
                
                 <img id ="logo" class="site-logo" src = "assests/images/logo.png" alt="logo" width="200px" height="150px">
-                  <a href ="login.html" id="login">Login</a>
-                 </header>
-     
-               
-        <section style= "flex-direction: column;   height: 800px; display: flex;">
+                <span class="loginStyle">
+                    <button  type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#login" id="login-button" style="padding: -0.625rem .75rem;">LOGIN</button>
+                </span>
+           </header>
+      
+         <section  style= "flex-direction: column;   height: 710px; display: flex; ">
            <div id="search">
             <input id="searchBar" type="text"  placeholder="City" name="City" id="City" autocomplete="off"/>
-        </div>
-        <br/>
-                 <div class="Content" style="display:flex ;flex-direction: column;margin-top: 2%;";>
+            </div>
+            <br/>
+                 <div class="Content" style="display:flex ;flex-direction: column;margin-top: 2%;margin-left: 4%;";>
 
                 <div id="image" style="display:flex; justify-content:space-evenly;">
-                    <div class="container"><a href="list.html" style=" text-decoration: none";><img class="cityimage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"/><div class="text1Sty">Delhi</div> </a></div>
+                 <div class="container"><a href="list.html" style=" text-decoration: none";><img class="cityimage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"/><div class="text1Sty">Delhi</div> </a>
+                </div>
 
                     <div class="container">
                         <a href="list.html" style=" text-decoration: none;" target="_self"><img class="cityimage" src ="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"><div class="text2Sty" >Goa</div></a></div>
@@ -33,14 +40,19 @@
                             <div class="container">
                                 <a href="list.html" style=" text-decoration: none;" target="_self"><img class="cityimage" src ="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"/><div class="text4Sty">Kolkata</div></a></div>
                             </div>
-                        </br> </br> </br>
-                <a href ="index.html" target="_self" style="display:flex; justify-content:center; text-decoration: none;"><p style="text-align: center;margin-bottom:4%;color: black;"><b>View More>></b></p></a>
-            
-        </section>
+                        </div>
+       
+                        <div id="viewmore" >
+                        <a href="#" target="_self" style="display:flex; justify-content:center; text-decoration: none; ">
+                            <button type="button" class="btn btn-secondary btn-sm" href="#" tabindex="-1" role="button" aria-disabled="true"  >View more</button></a></div>
+                          </div> 
+                 </div> 
+          </section>
             
        
             <footer>
-                <a href="contact.html" target="_self" class="contactStyle">Contact Us</a><br/>
+                <span class="contactStyle"><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#example-modal-signup" id="sign-up-button" >Contact Us</button>
+                </span>
                <div class="icon">
                 <a href="https://www.facebook.com" target="_blank">
                     <img class="socialmedia" src="assests\images\facebook.png" alt="Facebook" /></a>
@@ -53,8 +65,63 @@
                 2020 ROOM SEARCH PVT LTD</p>
                 
             </footer>
+            <!--login-->
+         <div class="modal" tabindex="-1" role="dialog" id="login">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal-header">Please Login</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" style="margin-left: 7%;  margin-right: 7%;">
+                  <p style="display: flex; float: left;">
+                      <label style="margin-right: 25%;" for="name">Username:</label><br/>
+                      <input type="text" id="name" placeholder="Enter Username" required/>
+                  </p>
+                  <p style="display: flex; float: left;">
+                      <label style="margin-right: 27%;" for="example-input-password">Password:</label><br/>
+                      <input type="password" id="example-input-password" placeholder="Enter Password" required autocomplete="off"/>
+                  </p>
+                 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary btn-sm" style="display: flex; margin: auto;">Login</button>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--contact modal-->
+         <div class="modal" tabindex="-1" role="dialog" id="example-modal-signup">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal-header">Get in touch</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <p>Thank you for reaching out!!!<br/>
+                        Please enter you email and we will get back to you</p>
+                      <p style="display: flex; float: left;">
+                          <label for="email">Email:</label><br/>
+                          <input type="email" id="email" placeholder="Enter your email id" required/>
+                      </p>
+                     
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary btn-sm">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-            
-        </body>      
+   </body>      
     
 </html>

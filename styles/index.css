@@ -55,13 +55,10 @@
 
 .cityimage:hover + .text4Sty {
  visibility: visible;
- 
 }
-
-
-
-
-
+.viewmore{
+  text-align: center;
+}
 
 .text1Sty{
  position: relative;
@@ -80,6 +77,7 @@
  left:42%;
  color: #f1f1f1; 
  visibility: hidden;
+ vertical-align: middle;
 }
 
 

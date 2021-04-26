@@ -27,9 +27,14 @@ bottom: 0;
 height: 8%;
 }
   
-  #login{
-  justify-content: flex-end;  
-    margin-right: 2%;
+.loginStyle{
+  right: 0%;
+  margin-top: 10px;
+  margin-right: 2%;
+  text-decoration: none;
+  position: absolute;
+  color: black;
+  padding: -0.625rem .75rem;
   }
   
   a#logo, img.site-logo{
@@ -54,11 +59,12 @@ height: 8%;
   
   }
   .contactStyle{
-    bottom:32%;
-    margin-left: 2%;
+    bottom:20%;
+    margin-left: 4%;
     text-decoration: none;
     position: absolute;
-   color: black;
+    color: black;
+   
   }
   
   .copyright{

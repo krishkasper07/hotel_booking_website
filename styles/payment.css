@@ -29,13 +29,14 @@
     margin-right: 2%; 
     margin-left: 2%;
     margin-top: 2%;
-    justify-content: space-evenly;
+    justify-content:space-around;
     align-items:center;
-
-    
     
 }
 .imgDiv_desc{
     margin-left: 5%;
     color: black;
+}
+#detail3{
+    text-align: center;
 }
